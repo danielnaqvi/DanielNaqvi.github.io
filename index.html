@@ -64,22 +64,25 @@
     gap: 1rem;
   }
 
-  .btn {
-    background: #0077cc;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
+/* Buttons styled like bio icons area */
+.btn, .btn-secondary {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 2px solid #333;
+  background: transparent;
+  color: #333;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
 
-  .btn-secondary {
-    background: #eaeaea;
-    color: #333;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.9rem;
+/* Hover effect: subtle dark fill */
+.btn:hover, .btn-secondary:hover {
+  background: #333;
+  color: #fff;
+}
+
   }
 </style>
 
@@ -104,7 +107,7 @@
 
     <!-- Hawai'i Tourism Project -->
     <div class="project-card">
-      <img src="images/fulls/hawaii_viz.png" alt="Hawaii Tourism Dashboard" class="project-image">
+      <img src="images/fulls/Hawaii_Viz.png" alt="Hawaii Tourism Dashboard"
       <h3 class="project-title">Hawai'i Tourism Length of Stay Analysis</h3>
       <p class="project-description">
         Analyzed 20+ years of Hawai'i tourism data to uncover how visitor length‑of‑stay patterns shifted across islands, visitor types, and major events like COVID‑19. Built a Tableau dashboard highlighting long‑term trends and island‑specific behavior.
@@ -118,7 +121,7 @@
 
     <!-- Housing Data Cleaning Project -->
     <div class="project-card">
-      <img src="images/fulls/airbnb_viz.png" alt="Housing Data Cleaning Dashboard" class="project-image">
+      <img src="images/fulls/Airbnb_Viz.png" alt="Housing Data Cleaning Dashboard" class="project-image">
       <h3 class="project-title">Housing Data Cleaning & Transformation</h3>
       <p class="project-description">
         Cleaned and transformed raw housing data in SQL Server to improve analytical usability. Built a Tableau dashboard showing pricing patterns, revenue trends, and geographic variation across ZIP codes.
@@ -132,7 +135,7 @@
 
     <!-- COVID Data Exploration Project -->
     <div class="project-card">
-      <img src="images/fulls/covid_viz.png" alt="COVID Data Dashboard" class="project-image">
+      <img src="images/fulls/Covid_Viz.png" alt="COVID Data Dashboard" class="project-image">
       <h3 class="project-title">COVID‑19 Global Data Exploration</h3>
       <p class="project-description">
         Explored global COVID‑19 trends using SQL Server, analyzing infection rates, mortality ratios, and regional differences. Visualized global patterns through maps, KPIs, and time‑based charts.
@@ -146,7 +149,7 @@
 
     <!-- F1 Data Exploration Project -->
     <div class="project-card">
-      <img src="images/fulls/f1_viz.png" alt="F1 Dashboard" class="project-image">
+      <img src="images/fulls/F1_Viz.png" alt="F1 Dashboard" class="project-image">
       <h3 class="project-title">F1 Data Exploration & Performance Analysis</h3>
       <p class="project-description">
         A SQL and Tableau exploration of F1 qualifying and race performance, combining historical trends with a 2022–2023 Q3 time comparison. Highlights team dominance, track characteristics, and driver performance patterns.
@@ -187,6 +190,7 @@
 
 	</body>
 </html>
+
 
 
 
