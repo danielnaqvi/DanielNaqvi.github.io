@@ -28,7 +28,7 @@
   }
 }
 
-/* --- CARD STYLE: clean, no outline --- */
+/* Make each card a vertical flexbox */
 .project-card {
   background: none;
   border: none;
@@ -40,38 +40,34 @@
   align-items: center;
 }
 
-/* --- LARGE UNIFORM IMAGES --- */
+/* Keep the image large and uniform */
 .project-image {
   width: 100%;
-  max-width: 800px;     /* controls how large the image can get */
-  height: 350px;        /* fixed height for perfect alignment */
-  object-fit: cover;    /* crops edges cleanly */
+  max-width: 600px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-/* --- TEXT STYLES --- */
-.project-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+/* Description + skills area should have consistent height */
+.project-description,
+.project-skills {
+  max-width: 600px;
 }
 
+/* Force the text block to take up equal space in all cards */
 .project-description {
-  font-size: 0.95rem;
-  margin-bottom: 0.75rem;
-  color: #444;
+  min-height: 90px;   /* adjust until all rows align */
 }
 
 .project-skills {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-/* --- BUTTON ROW (aligned across all cards) --- */
+/* Buttons stay aligned at the bottom */
 .project-links {
-  margin-top: auto;          /* pushes buttons to bottom for alignment */
+  margin-top: auto;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -202,6 +198,7 @@
 
 	</body>
 </html>
+
 
 
 
