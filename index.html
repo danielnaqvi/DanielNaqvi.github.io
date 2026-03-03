@@ -13,69 +13,67 @@
 	</head>
 	<body class="is-preload">
 
-		<style>
-  .project-card {
-  background: none;        /* no white box */
-  border: none;            /* no border */
-  box-shadow: none;        /* removes outline/shadow */
-  padding: 1rem 0;         /* vertical breathing room */
-  text-align: center;
-}
+<style>
 
-
-  @media (max-width: 800px) {
-   .projects-grid {
+/* --- GRID LAYOUT: 2 per row desktop, 1 per row mobile --- */
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;   /* spacing between cards */
+  gap: 2.5rem;
 }
-  }
 
+@media (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- CARD STYLE: no outline, no shadow --- */
 .project-card {
-  padding: 1rem 0;
   background: none;
   border: none;
   box-shadow: none;
+  padding: 1rem 0;
   text-align: center;
 }
-  }
 
+/* --- IMAGE STYLE: fixed size, consistent thumbnails --- */
 .project-image {
-  width: 300px;        /* fixed width */
-  height: 185px;       /* fixed height */
-  object-fit: cover;   /* crops edges cleanly */
+  width: 320px;       /* adjust larger/smaller here */
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   display: block;
-  margin: 0 auto 1rem auto; /* centers the image */
+  margin: 0 auto 1rem auto;
 }
 
+/* --- TEXT STYLES --- */
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 
+.project-description {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
 
-  .project-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
+.project-skills {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
 
-  .project-description {
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
-    color: #444;
-  }
+/* --- BUTTON ROW --- */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 
-  .project-skills {
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 1rem;
-  }
-
-  .project-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-/* Buttons styled like bio icons area */
+/* --- MODERN BUTTON STYLE (matches your bio area) --- */
 .btn, .btn-secondary {
   display: inline-block;
   padding: 10px 20px;
@@ -89,16 +87,14 @@
   transition: all 0.25s ease;
 }
 
-/* Hover: soft gray fill, not harsh black */
 .btn:hover, .btn-secondary:hover {
   background: #f2f2f2;
   border-color: #999;
   color: #111;
 }
 
-
-  }
 </style>
+
 
 		
 		<!-- Header -->
@@ -202,6 +198,7 @@
 
 	</body>
 </html>
+
 
 
 
