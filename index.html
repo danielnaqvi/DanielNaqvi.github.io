@@ -28,23 +28,26 @@
   }
 }
 
-/* --- CARD STYLE: no outline, no shadow --- */
+/* --- CARD STYLE: clean, no outline --- */
 .project-card {
   background: none;
   border: none;
   box-shadow: none;
   padding: 1rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* --- IMAGE STYLE: fixed size, consistent thumbnails --- */
+/* --- LARGE UNIFORM IMAGES --- */
 .project-image {
-  width: 320px;       /* adjust larger/smaller here */
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 1rem auto;
+  width: 100%;
+  max-width: 600px;     /* controls how large the image can get */
+  height: 350px;        /* fixed height for perfect alignment */
+  object-fit: cover;    /* crops edges cleanly */
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 /* --- TEXT STYLES --- */
@@ -66,14 +69,15 @@
   margin-bottom: 1rem;
 }
 
-/* --- BUTTON ROW --- */
+/* --- BUTTON ROW (aligned across all cards) --- */
 .project-links {
+  margin-top: auto;          /* pushes buttons to bottom for alignment */
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-/* --- MODERN BUTTON STYLE (matches your bio area) --- */
+/* --- MODERN BUTTON STYLE --- */
 .btn, .btn-secondary {
   display: inline-block;
   padding: 10px 20px;
@@ -198,6 +202,7 @@
 
 	</body>
 </html>
+
 
 
 
