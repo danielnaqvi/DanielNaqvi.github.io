@@ -34,12 +34,13 @@
     text-align: center;
   }
 
-  .project-image {
+.project-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 320px;   /* controls how big the thumbnail can get */
   height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;  /* centers the image */
   border-radius: 6px;
-  margin-bottom: 1rem;
   object-fit: cover;
 }
 
@@ -127,7 +128,7 @@
 
     <!-- Housing Data Cleaning Project -->
     <div class="project-card">
-      <img src="images/fulls/Airbnb_Viz.png" alt="Housing Data Cleaning Dashboard" class="project-image">
+      <img src="images/fulls/AirBNB_Viz.png" alt="Housing Data Cleaning Dashboard" class="project-image">
       <h3 class="project-title">Housing Data Cleaning & Transformation</h3>
       <p class="project-description">
         Cleaned and transformed raw housing data in SQL Server to improve analytical usability. Built a Tableau dashboard showing pricing patterns, revenue trends, and geographic variation across ZIP codes.
@@ -141,7 +142,7 @@
 
     <!-- COVID Data Exploration Project -->
     <div class="project-card">
-      <img src="images/fulls/Covid_Viz.png" alt="COVID Data Dashboard" class="project-image">
+      <img src="images/fulls/COVID_Viz.png" alt="COVID Data Dashboard" class="project-image">
       <h3 class="project-title">COVID‑19 Global Data Exploration</h3>
       <p class="project-description">
         Explored global COVID‑19 trends using SQL Server, analyzing infection rates, mortality ratios, and regional differences. Visualized global patterns through maps, KPIs, and time‑based charts.
@@ -195,6 +196,7 @@
 
 	</body>
 </html>
+
 
 
 
