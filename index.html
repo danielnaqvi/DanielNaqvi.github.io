@@ -35,14 +35,14 @@
   }
 
 .project-image {
-  width: 100%;
-  max-width: 320px;   /* controls how big the thumbnail can get */
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem auto;  /* centers the image */
+  width: 320px;        /* fixed width */
+  height: 200px;       /* fixed height */
+  object-fit: cover;   /* crops edges cleanly */
   border-radius: 6px;
-  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem auto; /* centers the image */
 }
+
 
   .project-title {
     font-size: 1.25rem;
@@ -108,7 +108,6 @@
 
 				<!-- Two -->
 					<section id="projects" class="projects-section">
-  <h2 class="section-title">Featured Projects</h2>
 
   <div class="projects-grid">
 
@@ -196,6 +195,7 @@
 
 	</body>
 </html>
+
 
 
 
