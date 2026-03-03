@@ -14,16 +14,21 @@
 	<body class="is-preload">
 
 		<style>
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+  .project-card {
+  background: none;        /* no white box */
+  border: none;            /* no border */
+  box-shadow: none;        /* removes outline/shadow */
+  padding: 1rem 0;         /* vertical breathing room */
+  text-align: center;
+}
+
 
   @media (max-width: 800px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
+   .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;   /* spacing between cards */
+}
   }
 
   .project-card {
@@ -196,6 +201,7 @@
 
 	</body>
 </html>
+
 
 
 
