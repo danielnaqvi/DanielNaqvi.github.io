@@ -13,6 +13,77 @@
 	</head>
 	<body class="is-preload">
 
+		<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .project-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    color: #444;
+  }
+
+  .project-skills {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    background: #0077cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .btn-secondary {
+    background: #eaeaea;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+</style>
+
+		
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
@@ -116,6 +187,7 @@
 
 	</body>
 </html>
+
 
 
 
